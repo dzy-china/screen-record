@@ -1,0 +1,48 @@
+/*
+const my_main = require('electron')
+console.log(my_main)
+主进程可获取的全部对象(39个)：
+      {
+          clipboard,
+          nativeImage,
+          shell,
+          app,
+          autoUpdater,
+          BaseWindow,
+          BrowserView,
+          BrowserWindow,
+          contentTracing,
+          crashReporter,
+          dialog,
+          globalShortcut,
+          ipcMain,
+          inAppPurchase,
+          Menu,
+          MenuItem,
+          MessageChannelMain,
+          nativeTheme,
+          net,
+          netLog,
+          Notification,
+          powerMonitor,
+          powerSaveBlocker,
+          pushNotifications,
+          protocol,
+          safeStorage,
+          screen,
+          session,
+          ShareMenu,
+          systemPreferences,
+          TouchBar,
+          Tray,
+          utilityProcess,
+          View,
+          webContents,
+          WebContentsView,
+          webFrameMain,
+          desktopCapturer,
+          ImageView
+        }
+   */
+
+require(__dirname + '/main-plus/app/index.js');

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>卉卉录屏</title>
+    <link rel="stylesheet" href="./css/hs-css-2022.12.15.min.css" />
+  </head>
+  <body class="hs-ini">
+
+      <div class="hs-height-00100 hs-row-center-center hs-box-sizing-border-box hs-padding-left-right-30">
+
+        <!-- 预览框 -->
+        <video id="video" style="object-fit: contain;"  class="hs-width-0050 hs-height-00100 " poster="./images/text-logo.png"></video>
+
+        <div class="hs-width-0050">
+          <!--录屏时间显示-->
+          <div id="record_time" class="hs-row-center-center hs-height-100 hs-color-green hs-font-size-3">0</div>
+
+          <!--录屏控制按钮-->
+          <ul class="hs-ini hs-row-around-center hs-child-padding-top-bottom-15">
+            <li><button type="button" id="start_record" class="hs-color-green">开始录制</button></li>
+            <li><button type="button" id="pause_record" class="hs-color-warning" disabled>暂停录制</button></li>
+            <li><button type="button" id="stop_record" class="hs-color-red" disabled>停止录制</button></li>
+          </ul>
+
+          <!--  选择录制声音种类  -->
+          <div class="hs-margin-top-15 hs-row-center-center">
+            <span>声音选择：</span>
+            <select name="audio_sort" id="audio_select">
+              <option value="all" selected>麦克风和扬声器</option>
+              <option value="microphone">麦克风</option>
+              <option value="loudspeaker">扬声器</option>
+              <option value="none">没有声音</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+    <script src="./Index.js" ></script>
+  </body>
+</html>
